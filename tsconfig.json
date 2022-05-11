@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "sourceMap": true,
+      //☆☆☆ts-loaderでjsにコンパイル後にbabel-loaderでes5にトランスパイルするので、この時点ではes5にしない。
+      "target": "es2020",
+      "module": "esnext",
+      "outDir": "dist",
+      "jsx": "react",
+      "moduleResolution": "Node",
+      "downlevelIteration": true,
+      "lib": ["ES2020", "DOM","DOM.Iterable"],
+      "allowSyntheticDefaultImports": true
+    },
+    "exclude": ["./node_modules"]
+  }
